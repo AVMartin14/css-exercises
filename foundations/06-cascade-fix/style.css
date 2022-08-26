@@ -1,42 +1,64 @@
+/* Did you make sure to not edit the HTML file? */
+/* If you added selectors to the CSS, do they target a valid HTML element? */
 body{
   font-family:Arial, Helvetica, sans-serif
 }
+
 
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
-
-.small-para {
+/* Chaining selector */
+p.small-para {
   font-size: 14px;
   font-weight: 800;
-}
-
+} 
 .para {
   font-size: 22px;
 }
+/* Could move it to right here after .para since it's the first class name.
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+} */
 
-.confirm {
+
+/* #confirm-button - could turn it into ID since they are higher than class selectors */
+/* 2 classes more specific */
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
 } 
-
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+/* Could have moved it below button.
+.confirm { 
+  background: green;
+  color: white;
+  font-weight: bold;
+} */
 
-.child {
+
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
-
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
+/* Using div have to move it below div .text since it cam first
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+*/
